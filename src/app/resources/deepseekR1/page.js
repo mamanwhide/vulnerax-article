@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BlogDetail from '@/components/BlogDetail';
+import "../../globals.css"
 
 const DeepseekR1 = () => {
   const blog = {

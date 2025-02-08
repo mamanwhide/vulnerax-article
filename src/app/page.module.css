@@ -94,6 +94,7 @@ a.secondary {
 
 .footer {
   grid-row-start: 3;
+  align-items: center;
   display: flex;
   gap: 24px;
 }
@@ -158,6 +159,8 @@ a.secondary {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    
   }
 }
 
@@ -166,3 +169,4 @@ a.secondary {
     filter: invert();
   }
 }
+

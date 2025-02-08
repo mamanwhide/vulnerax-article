@@ -29,13 +29,13 @@ export default function Footer() {
                 <Link href="https://vulnerax.com/#about">About</Link>
               </li>
               <li>
-                <Link href="https://vulnerax.com/#our-team">Team</Link>
-              </li>
-              <li>
                 <Link href="https://vulnerax.com/#services">Services</Link>
               </li>
               <li>
                 <Link href="/">Resources</Link>
+              </li>
+              <li>
+                <Link href="https://vulnerax.com/#our-team">Team</Link>
               </li>
             </ul>
           </div>

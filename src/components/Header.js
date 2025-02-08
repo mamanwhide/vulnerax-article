@@ -29,8 +29,16 @@ export default function Header() {
             <li><Link href="https://vulnerax.com">Home</Link></li>
             <li><Link href="https://vulnerax.com/#about">About</Link></li>
             <li><Link href="https://vulnerax.com/#services">Services</Link></li>
-            <li><Link href="https://vulnerax.com/#our-team">Team</Link></li>
             <li><Link href="/" className='active'>Resources</Link></li>
+            {/* <li className="dropdown">
+              <Link href="#" className='active'>
+              <span>Resources</span><i className='bi bi-chevron-down toggle-dropdown'></i></Link>
+              <ul>
+                <li><Link href="/">Blog</Link></li>
+                <li><Link href="#">Document</Link></li>
+              </ul>
+            </li> */}
+            <li><Link href="https://vulnerax.com/#our-team">Team</Link></li>
           </ul>
           <i className={`mobile-nav-toggle d-xl-none bi ${isOpen ? 'bi-x' : 'bi-list'}`} onClick={toggleNav}></i>
         </nav>

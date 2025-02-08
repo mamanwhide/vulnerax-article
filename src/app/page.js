@@ -17,6 +17,7 @@ export default function Home() {
         <section id="blog" className="blog section">
           <div className="container section-title" data-aos="fade-up">
             <h2>Blog Post</h2>
+            <p>This blog will present the latest reports, security incident analysis and global threat trends affecting businesses, organizations and individuals. From major ransomware attacks, corporate data leaks, zero-day exploits, etc. We provide in-depth insights to keep you one step ahead in cybersecurity.</p>
           </div>
           <Resource />
         </section>

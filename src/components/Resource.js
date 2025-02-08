@@ -80,13 +80,7 @@ const Resource = () => {
     },
   ];
 
-  // Inisialisasi AOS saat komponen di-mount
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, 
-      once: true, 
-    });
-  }, []);
+
 
   return (
     <section className="py-xl-2">
