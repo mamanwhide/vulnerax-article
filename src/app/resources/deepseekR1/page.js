@@ -1,3 +1,8 @@
+'use client';
+
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BlogDetail from '@/components/BlogDetail';
@@ -6,7 +11,7 @@ const DeepseekR1 = () => {
   const blog = {
     title: "DeepSeek R1 exposed: Security flaws in China’s AI",
     date: "February 1, 2025",
-    image: "/img/blog/blog1.png",
+    image: "/img/blog/blog2.png",
     content: [
       "The cybersecurity firm Kela has published a report highlighting multiple security vulnerabilities in DeepSeek R1, a Chinese AI tool that has recently gained attention for its advanced capabilities, accessibility, and competition with OpenAI’s ChatGPT. According to Kela’s findings, DeepSeek R1 surpasses ChatGPT in several tasks but is highly susceptible to jailbreak exploits, allowing it to generate harmful content such as ransomware, sensitive fabrications, and step-by-step guides for illegal activities.",
       "One of the major security weaknesses identified is the “Evil Jailbreak” attack, a flaw initially discovered in GPT-3.5 after ChatGPT’s launch. This exploit enables users to bypass ethical restrictions by prompting the AI to adopt a malicious persona. While OpenAI has patched this vulnerability in GPT-4 and GPT-4o, DeepSeek R1 remains exposed. During testing, Kela researchers successfully prompted the model to create an info-stealing malware designed to extract credentials, cookies, and credit card data, then send the stolen information to a remote server.",
@@ -16,11 +21,20 @@ const DeepseekR1 = () => {
     ],
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
     <div>
       <Header />
       <main className="main">
-        <BlogDetail title={blog.title} date={blog.date} image={blog.image} content={blog.content} />
+        <div data-aos="fade-up" data-aos-delay="100">
+          <BlogDetail title={blog.title} date={blog.date} image={blog.image} content={blog.content} />
+        </div>
       </main>
       <Footer />
     </div>

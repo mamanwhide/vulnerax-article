@@ -4,8 +4,6 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import "./globals.css";
 import ClientOnlyAOS from "./pages/api/clientAOS";
 
-
-
 export const metadata = {
   title: 'VulneraX - Cybersecurity Services',
   description: 'Transforming Vulnerabilities into Strengths',
@@ -40,12 +38,11 @@ export const metadata = {
   },
 };
 
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-
       <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords} />
@@ -73,7 +70,6 @@ export default function RootLayout({ children }) {
 
         <link rel="icon" href="/public/src/app/favicon.ico" />
         <link rel="vulnerax" href="/public/src/app/favicon.ico" />
-
 
         <link href="https://fonts.googleapis.com" rel="preconnect" />
         <link href="https://fonts.gstatic.com" rel="preconnect" crossOrigin="true" />

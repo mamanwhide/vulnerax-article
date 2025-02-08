@@ -6,17 +6,25 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "@next/bundle-analyzer": "^15.1.6",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
+    "critters": "^0.0.25",
     "next": "15.1.6",
+    "next-purgecss": "^4.0.0",
     "next-sitemap": "^4.2.3",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.9",
     "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3"
   }
 }

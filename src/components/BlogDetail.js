@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 const BlogDetail = ({ title, date, image, content }) => {
   return (
     <div className="container mt-5 pt-5">
@@ -13,9 +11,9 @@ const BlogDetail = ({ title, date, image, content }) => {
         </header>
         <section className="mb-2">
           {content.map((paragraph, index) => (
-            <p key={index} className="fs-5 mb-4">
-              {paragraph}
-            </p>
+            <div key={index} className="mb-4">
+              <p className="fs-5">{paragraph}</p>
+            </div>
           ))}
         </section>
       </article>
