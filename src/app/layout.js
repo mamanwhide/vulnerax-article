@@ -5,7 +5,7 @@ import "./globals.css";
 import ClientOnlyAOS from "./pages/api/clientAOS";
 
 export const metadata = {
-  title: 'VulneraX - Cybersecurity Services',
+  title: 'VulneraX - Resource Cybersecurity',
   description: 'Transforming Vulnerabilities into Strengths',
   keywords: 'Penetration Testing, Professional Red Teaming, Vulnerability Assessment, System Hardening, Threat Hunting & IR, Ransomware Readiness Assessment',
   canonical: 'https://vulnerax.com',
